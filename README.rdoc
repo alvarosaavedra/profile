@@ -1,0 +1,7 @@
+= Profile
+
+Making a profile page for users of divise using mongoid conector in a mongodb
+
+
+
+This project rocks and uses MIT-LICENSE.
