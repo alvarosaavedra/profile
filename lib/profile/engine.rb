@@ -1,3 +1,4 @@
+require 'devise'
 module Profile
   class Engine < ::Rails::Engine
     isolate_namespace Profile
