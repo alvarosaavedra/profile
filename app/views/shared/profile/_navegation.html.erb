@@ -1,21 +1,21 @@
 <% if client_signed_in? %>
   <li>
-  <%= link_to('Logout', destroy_client_session_path, :method=>'delete') %>
+  <%= link_to('Logout', profile.destroy_client_session_path, :method=>'delete') %>
   </li>
   <li>
-    <%= link_to('Profile', current_client) %>
+    <%= link_to('Profile', profile.current_client) %>
   </li>
 <% else %>
   <li>
-  <%= link_to('Login', new_client_session_path)  %>
+  <%= link_to('Login', profile.new_client_session_path)  %>
   </li>
 <% end %>
 <% if client_signed_in? %>
   <li>
-  <%= link_to('Edit account', edit_client_registration_path) %>
+  <%= link_to('Edit account', profile.edit_client_registration_path) %>
   </li>
 <% else %>
   <li>
-  <%= link_to('Sign up', new_client_registration_path)  %>
+  <%= link_to('Sign up', profile.new_client_registration_path)  %>
   </li>
 <% end %>
