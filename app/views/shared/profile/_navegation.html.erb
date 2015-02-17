@@ -3,7 +3,7 @@
   <%= link_to('Logout', profile.destroy_client_session_path, :method=>'delete') %>
   </li>
   <li>
-    <%= link_to('Profile', profile.current_client) %>
+    <%= link_to('Profile', current_client) %>
   </li>
 <% else %>
   <li>
